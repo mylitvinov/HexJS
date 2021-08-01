@@ -4,7 +4,7 @@
 //   со строковыми элементами. После префикса автоматически добавляется пробел.
 
 const addPrefix = (arr, prefix) => {
-    let newArr = [];
+    const newArr = [];
     for (let i = 0; i < arr.length; i++) {
         newArr[i] = prefix + ' ' + arr[i];
 
