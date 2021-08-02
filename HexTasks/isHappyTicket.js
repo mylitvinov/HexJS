@@ -12,14 +12,14 @@
 const isHappyTicket = (ticket) => {
     if (ticket.length % 2 !== 0) return false;
     let left = 0;
-    let rigt = 0;
+    let right = 0;
     for (let i = 0; i < ticket.length / 2; i++) {
         left += +ticket[i];
-        rigt += +ticket[ticket.length - 1 - i];
+        right += +ticket[ticket.length - 1 - i];
 
     }
 
-    return left === rigt ? true : false;
+    return left === right ? true : false;
 }
 
 console.log(isHappyTicket('123006'));
