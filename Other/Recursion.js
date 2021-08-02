@@ -1,3 +1,12 @@
+const factorial = (n) => {
+  if (n === 0) {
+    return 1;
+  }
+  return n * factorial(n - 1);
+};
+
+const answer = factorial(3);
+
 
 const sum1 = (n) => {
     if (n === 1) {
