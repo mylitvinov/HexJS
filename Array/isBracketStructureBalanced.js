@@ -30,6 +30,8 @@ console.log(isBracketStructureBalanced('()'));  // true
 console.log(isBracketStructureBalanced('[()]'));  // true
 console.log(isBracketStructureBalanced('{<>}}')); // false
 
+// const openingSymbols = ['(', '[', '{', '<'];
+// const closingSymbols = [')', ']', '}', '>'];
 
 // const isOpeningSymbol = (symbol) => openingSymbols.includes(symbol);
 // const getClosingSymbolFor = (symbol) => closingSymbols[openingSymbols.indexOf(symbol)];
