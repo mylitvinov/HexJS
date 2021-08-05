@@ -45,21 +45,25 @@ console.log(getMirrorMatrix([
   
 
   // teacher solution
-// const makeMatrix = (size) => {
-//   const matrix = [];
-//   for (let i = 0; i < size; i += 1) {
-//     matrix.push(new Array(size));
-//   }
-//   return matrix;
-// };
-// const getMirrorMatrix = (array) => {
-//   const size = array.length;
-//   const mirrorArray = makeMatrix(size);
-//   for (let i = 0; i < size; i += 1) {
-//     for (let j = 0; j < size / 2; j += 1) {
-//       mirrorArray[i][j] = array[i][j];
-//       mirrorArray[i][size - j - 1] = array[i][j];
-//     }
-//   }
-//   return mirrorArray;
-// };
+  // const getMirrorArray = (array) => {
+  //   const size = array.length;
+  //   const mirrored = [];
+  
+  //   for (let i = 0; i < size / 2; i += 1) {
+  //     mirrored[i] = array[i];
+  //     mirrored[size - i - 1] = array[i];
+  //   }
+  
+  //   return mirrored;
+  // };
+  
+  // const getMirrorMatrix = (matrix) => {
+  //   const mirroredMatrix = [];
+  
+  //   for (const row of matrix) {
+  //     const mirroredRow = getMirrorArray(row);
+  //     mirroredMatrix.push(mirroredRow);
+  //   }
+  
+  //   return mirroredMatrix;
+  // };
