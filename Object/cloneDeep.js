@@ -23,7 +23,7 @@ export default cloneDeep;
 // END
 
 
-import cloneDeep from '../objects.js';
+// import cloneDeep from '../objects.js';
 
 const data = {
   key: 'value',
