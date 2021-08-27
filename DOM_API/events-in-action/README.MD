@@ -1,16 +1,16 @@
-В Bootstrap есть компонент nav (Обязательно перейдите по ссылке и покликайте по нему). Один из вариантов этого компонента — это табы, которые переключаются, по нажатию, без перезагрузки страницы.
+В предыдущих уроках мы познакомились со свойством textContent, которое позволяет безопасно вставлять данные на страницу, чтобы избежать уязвимостей. В этом упражнении мы отработаем "ручное" экранирование данных при установке их через свойство innerHTML.
 
-<nav>
-    <div class="nav nav-tabs">
-        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button">Home</button>
-        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button">Profile</button>
-    </div>
-</nav>
-<div class="tab-content">
-    <div class="tab-pane active" id="home">Home tab</div>
-    <div class="tab-pane" id="profile">Profile tab</div>
+src/application.js
+В задании дана форма обратной связи, состоящая из трех полей: email, name и comment. Напишите и экспортируйте функцию по умолчанию, которая при отправке формы получает из неё данные и экранирует их. Когда форма заполнена и "отправлена" (нажата кнопка send), то вместо формы появляется документ с такой структурой:
+
+<div>
+  <p>Feedback has been sent</p>
+  <div>Email: test@email.com</div>
+  <div>Name: Matz</div>
+  <div>Comment: My Comment</div>
 </div>
-По клику на таб происходит следующее:
+Для экранирования введённых данных используйте функцию htmlEscape() из библиотеки escape-goat.
 
-Класс active снимается с текущего элемента меню и активного блока с данными.
-Класс active добавляется табу, по которому кликнули и соответствующему блоку с данными.
+Подсказки
+Проще всего подготовить необходимый HTML, и подставлять в него данные через innerHTML.
+Экранирование символов
